@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Header from "./components/Header";
+import Home2 from "./components/Home/Home";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 
@@ -30,6 +31,9 @@ root.render(
       rel="stylesheet"
     />
     <Header />
+    <main className="main">
+      <Home2 />
+    </main>
     <RouterProvider router={router} />
   </StrictMode>
 );
