@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About/About";
 import Header from "./components/Header";
 import Home2 from "./components/Home/Home";
+import Skills from "./components/Skills/Skills";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 
@@ -35,6 +36,7 @@ root.render(
     <main className="main">
       <Home2 />
       <About />
+      <Skills />
     </main>
     <RouterProvider router={router} />
   </StrictMode>
