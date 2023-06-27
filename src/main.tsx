@@ -4,6 +4,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import About from "./components/About/About";
 import Header from "./components/Header";
 import Home2 from "./components/Home/Home";
 import Error from "./pages/Error";
@@ -33,6 +34,7 @@ root.render(
     <Header />
     <main className="main">
       <Home2 />
+      <About />
     </main>
     <RouterProvider router={router} />
   </StrictMode>
