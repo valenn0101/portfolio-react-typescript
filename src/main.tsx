@@ -10,6 +10,7 @@ import Home2 from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
+import Qualifications from "./Qualifications/Qualifications";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,7 @@ root.render(
       <Home2 />
       <About />
       <Skills />
+      <Qualifications />
     </main>
     <RouterProvider router={router} />
   </StrictMode>
