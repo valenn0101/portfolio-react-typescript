@@ -5,7 +5,7 @@ import Frontend from "./Frontend";
 
 const Skills = () => {
   return (
-    <section className="skills section" id="ski">
+    <section className="skills section" id="skill">
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">Tecnologias que utilizo</span>
 

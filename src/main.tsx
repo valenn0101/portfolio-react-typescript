@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
 import Home2 from "./components/Home/Home";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Skills from "./components/Skills/Skills";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
@@ -42,7 +43,8 @@ root.render(
       <Skills />
       <Qualifications />
       <Contact />
-      <Footer />
     </main>
+    <Footer />
+    <ScrollUp />
   </StrictMode>
 );
