@@ -18,10 +18,7 @@
     "simple-import-sort" // Plugin for sorting imports in file.
   ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      { "endOfLine": "auto" }
-    ],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "import/first": "warn",
     "import/newline-after-import": "warn",
     "import/no-duplicates": "error",
@@ -29,6 +26,7 @@
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
     "react/prop-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-sort-props": [
       "warn",

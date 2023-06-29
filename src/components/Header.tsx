@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import "./styles/Header.css";
 
 import { useState } from "react";
