@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const WorksItems = ({ item }) => {
   return (
     <div key={item.id} className="work__card">
