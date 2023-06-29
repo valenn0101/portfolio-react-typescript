@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useRouteError } from "react-router";
 
 import ErrorProps from "@/models/someInterfaces";
