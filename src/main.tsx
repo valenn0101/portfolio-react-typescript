@@ -2,26 +2,16 @@ import "./main.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header";
 import Home2 from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
+import Qualifications from "./components/Qualifications/Qualifications";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Skills from "./components/Skills/Skills";
-import Error from "./pages/Error";
-import Home from "./pages/Home";
-import Qualifications from "./Qualifications/Qualifications";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />, // Componente que queremos cargar
-    errorElement: <Error />,
-  },
-]);
 
 const container = document.getElementById("root");
 const root = createRoot(container as HTMLDivElement);
@@ -42,6 +32,7 @@ root.render(
       <About />
       <Skills />
       <Qualifications />
+      <Projects />
       <Contact />
     </main>
     <Footer />

@@ -17,7 +17,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          (cambio de idioma)
+          🏔️ Bienvenido 🏔️
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -60,7 +60,7 @@ const Header = () => {
 
             <li className="nav__item">
               <a
-                href="portfolio"
+                href="#portfolio"
                 className={
                   activeNav === "#portfolio"
                     ? "nav__link active-link"
