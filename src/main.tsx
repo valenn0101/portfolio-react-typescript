@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Header from "./components/Header";
 import Home2 from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
@@ -39,6 +40,7 @@ root.render(
       <About />
       <Skills />
       <Qualifications />
+      <Contact />
     </main>
     <RouterProvider router={router} />
   </StrictMode>
