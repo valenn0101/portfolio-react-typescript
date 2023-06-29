@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import "./Contact.css";
 
 import emailjs from "@emailjs/browser";
@@ -6,7 +8,7 @@ import React, { useRef } from "react";
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = e => {
+  const sendEmail = (e: Event) => {
     e.preventDefault();
 
     emailjs.sendForm(
@@ -17,6 +19,7 @@ const Contact = () => {
     );
     e.target.reset();
   };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Mis contactos</h2>

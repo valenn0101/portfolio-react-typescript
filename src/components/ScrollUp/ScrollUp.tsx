@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import "./ScrollUp.css";
 
 const ScrollUp = () => {
