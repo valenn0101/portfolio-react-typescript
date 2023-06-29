@@ -2,37 +2,40 @@ import "./main.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Error from "./pages/Error";
-import Home from "./pages/Home";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />, // Componente que queremos cargar
-    errorElement: <Error />,
-    children: [
-      {
-        path: "contacts/:id", //Rutas dinamicas
-        element: <Contact />,
-      },
-    ],
-  },
-  {
-    path: "/about",
-    element: <About />,
-    errorElement: <Error />,
-  },
-]);
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Home2 from "./components/Home/Home";
+import Projects from "./components/Projects/Projects";
+import Qualifications from "./components/Qualifications/Qualifications";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
+import Skills from "./components/Skills/Skills";
 
 const container = document.getElementById("root");
 const root = createRoot(container as HTMLDivElement);
 
 root.render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <Header />
+    <main className="main">
+      <Home2 />
+      <About />
+      <Skills />
+      <Qualifications />
+      <Projects />
+      <Contact />
+    </main>
+    <Footer />
+    <ScrollUp />
   </StrictMode>
 );
