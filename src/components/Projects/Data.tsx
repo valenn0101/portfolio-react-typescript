@@ -6,6 +6,7 @@ import work3 from "../../assets/work4.png";
 import work4 from "../../assets/work5.png";
 import work5 from "../../assets/work6.png";
 import work7 from "../../assets/work7.png";
+import work8 from "../../assets/work8.png";
 
 export const projectsData: Project[] = [
   {
@@ -55,6 +56,14 @@ export const projectsData: Project[] = [
     skills: "MySQL, ORM, React, Login, Swagger, Cloudinary",
     category: ["Backend", "Frontend"],
     url: "https://ecommerce-st.vercel.app/",
+  },
+  {
+    id: 7,
+    image: work8,
+    title: "Football Manager",
+    skills: "Redux, TypeScript, React",
+    category: ["Frontend"],
+    url: "https://football-team-redux.vercel.app/",
   },
 ];
 
