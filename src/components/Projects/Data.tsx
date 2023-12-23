@@ -7,6 +7,7 @@ import work4 from "../../assets/work5.png";
 import work5 from "../../assets/work6.png";
 import work7 from "../../assets/work7.png";
 import work8 from "../../assets/work8.png";
+import work9 from "../../assets/stellar.png";
 
 export const projectsData: Project[] = [
   {
@@ -64,6 +65,14 @@ export const projectsData: Project[] = [
     skills: "Redux, TypeScript, React",
     category: ["Frontend"],
     url: "https://football-team-redux.vercel.app/",
+  },
+  {
+    id: 8,
+    image: work9,
+    title: "Stellar Wallet",
+    skills: "Redux, TypeScript, React, Blockchain",
+    category: ["Frontend"],
+    url: "https://wallet-stellar-project.vercel.app/wallet",
   },
 ];
 
