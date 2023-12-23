@@ -25,6 +25,14 @@ const Backend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
+              <h3 className="skills__name">Nest.js</h3>
+              <span className="skills_level">Node.JS Library</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div>
               <h3 className="skills__name">SQL</h3>
               <span className="skills_level">MySQL & PostgreSQL</span>
             </div>
@@ -55,28 +63,11 @@ const Backend = () => {
               <span className="skills_level">Docs</span>
             </div>
           </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">NoSQL</h3>
-              <span className="skills_level">MongoDB</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Cloud</h3>
-              <span className="skills_level">AWS & Cloudinary</span>
-            </div>
-          </div>
-
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
               <h3 className="skills__name">ORM</h3>
-              <span className="skills_level">Prisma</span>
+              <span className="skills_level">Prisma & TypeORM</span>
             </div>
           </div>
         </div>

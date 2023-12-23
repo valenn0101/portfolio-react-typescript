@@ -28,8 +28,8 @@ const Frontend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">Bootstrap</h3>
-              <i className="bx bxl-bootstrap"></i>{" "}
+              <h3 className="skills__name">Tailwind.css</h3>
+              <i className="bx bxl-tailwind-css"></i>{" "}
             </div>
           </div>
 
@@ -62,8 +62,8 @@ const Frontend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">Material UI</h3>
-              <span className="skills_level">React library</span>
+              <h3 className="skills__name">React Native</h3>
+              <span className="skills_level">Mobile development</span>
             </div>
           </div>
 
