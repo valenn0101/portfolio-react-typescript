@@ -4,7 +4,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Ramon Valentin Veron
+        Valentin Veron Caceres
         <svg
           width="36"
           height="36"
@@ -55,12 +55,11 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">JavaScript Dev</h3>
+      <h3 className="home__subtitle">Fullstack Developer</h3>
       <p className="home__description">
-        Trabajo en mis en proyectos personales para expandir mis horizontes. Me
-        destaco en el trabajo en equipo, valorando el intercambio de ideas y
-        criticas. Mi objetivo es seguir aprendiendo y trabajar en ambientes
-        dinamicos.
+        Programador profesional y estudiante de Ingenieria en Sistemas. Destaco
+        siempre el trabajo en equipo, la atencion al usuario y la escalabilidad
+        de mis proyectos.
       </p>
 
       <a href="#contact" className="button button--flex">
