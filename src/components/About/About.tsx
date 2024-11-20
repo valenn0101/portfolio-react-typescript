@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">Sobre mi</h2>
-      <span className="section__subtitle">Mi historia</span>
+      <span className="section__subtitle">Mi camino personal</span>
 
       <div className="about__container container grid">
         <img src={AboutImg} className="about__img" alt="" />
@@ -17,10 +17,15 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Fullstack developer con bases en Ingenieria Electromecanica. Me
-            gusta hacer APIs bien ordenadas y faciles de leer. En mi dia a dia
-            suelo informarme mucho sobre la programacion y las tecnologias que
-            hay en el mercado.
+            Soy desarrollador web y estudiante de Ingenieria. En mis tiempos
+            libres practico calistenia y tambien me doy lugar para a los
+            videojuegos.
+            <br /> Durante mi carrera profesional y de estudiante una de mis
+            pasiones fue resolver y ayudar al usuario a través de soluciones
+            tecnológicas bien pensadas y funcionales. Creo que la clave está en
+            empatizar con las necesidades del usuario final y transformar esas
+            necesidades en experiencias digitales que realmente marquen la
+            diferencia.
           </p>
           <a download="" href={CV} className="button button--flex">
             {" "}
