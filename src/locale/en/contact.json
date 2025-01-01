@@ -1,0 +1,18 @@
+{
+    "title": "My Contact",
+    "subtitle": "This is my contact section",
+    "contact_title": "Talk with me",
+    "contact_option_1": "Email",
+    "contact_option_1_info": "veroncaceresvalentin@gmail.com",
+    "contact_option_1_button": "Send me an email",
+    "contact_option_2": "LinkedIn",
+    "contact_option_2_info": "Valentin Caceres",
+    "contact_option_2_button": "Connect with me on LinkedIn",
+    "form_name_label": "Name",
+    "form_name_placeholder": "Your name",
+    "form_email_label": "Email",
+    "form_email_placeholder": "Your email",
+    "form_project_label": "Project",
+    "form_project_placeholder": "Your project",
+    "form_button": "Send a message"
+}
