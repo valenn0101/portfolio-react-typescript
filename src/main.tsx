@@ -2,6 +2,7 @@ import "./main.css";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./config/i18next.config";
 
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";

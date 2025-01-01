@@ -54,16 +54,24 @@ const Frontend = () => {
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">Redux</h3>
-              <i className="bx bxl-redux"></i>{" "}
+              <h3 className="skills__name">Next.js</h3>
+              <i className="bx bxl-next"></i>
             </div>
           </div>
 
           <div className="skills__data">
             <i className="bx bx-badge-check"></i>
             <div>
-              <h3 className="skills__name">React Native</h3>
-              <span className="skills_level">Mobile development</span>
+              <h3 className="skills__name">Tanstack</h3>
+              <span className="skills_level">Table, Query, Form</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i className="bx bx-badge-check"></i>
+            <div>
+              <h3 className="skills__name">Redux</h3>
+              <i className="bx bxl-redux"></i>{" "}
             </div>
           </div>
 

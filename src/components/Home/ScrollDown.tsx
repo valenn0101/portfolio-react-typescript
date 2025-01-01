@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const ScrollDown = () => {
+  const { t, i18n } = useTranslation("data");
+
   return (
     <div className="home__scroll">
       <a href="#about" className="home__scroll-button button--flex">
@@ -37,7 +41,7 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <span className="home__scroll-name">Sigue bajando</span>
+        <span className="home__scroll-name">{t("scrollDown")}</span>
         <i className="uil uil-arrow-down home__scroll-arrow"></i>
       </a>
     </div>

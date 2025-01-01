@@ -1,10 +1,11 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Data = () => {
+  const { t, i18n } = useTranslation("data");
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Valentin Veron Caceres
+        {t("title").toWellFormed()}
         <svg
           width="36"
           height="36"
@@ -55,15 +56,11 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Fullstack Developer</h3>
-      <p className="home__description">
-        Programador profesional y estudiante de Ingenieria en Sistemas. Destaco
-        siempre el trabajo en equipo, la atencion al usuario y la escalabilidad
-        de mis proyectos.
-      </p>
+      <h3 className="home__subtitle">{t("subtitle")}</h3>
+      <p className="home__description">{t("description")}</p>
 
       <a href="#contact" className="button button--flex">
-        Contactame
+        {t("contactButton")}
         <svg
           className="button__icon"
           xmlns="http://www.w3.org/2000/svg"
