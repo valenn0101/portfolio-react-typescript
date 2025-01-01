@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 import enHeader from "../locale/en/header.json";
 import esHeader from "../locale/es/header.json";
@@ -20,29 +21,44 @@ import esProjects from "../locale/es/projects.json";
 import enContact from "../locale/en/contact.json";
 import esContact from "../locale/es/contact.json";
 
-i18next.use(initReactI18next).init({
-  fallbackLng: "es",
-  interpolation: {
-    escapeValue: false,
-  },
-  resources: {
-    en: {
-      header: enHeader,
-      data: enHome,
-      aboutMe: enAboutMe,
-      qualifications: enQualifications,
-      projects: enProjects,
-      contact: enContact,
+i18next
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: "es",
+    interpolation: {
+      escapeValue: false,
     },
-    es: {
-      header: esHeader,
-      data: esHome,
-      aboutMe: esAboutMe,
-      qualifications: esQualifications,
-      projects: esProjects,
-      contact: esContact,
+    resources: {
+      en: {
+        header: enHeader,
+        data: enHome,
+        aboutMe: enAboutMe,
+        qualifications: enQualifications,
+        projects: enProjects,
+        contact: enContact,
+      },
+      es: {
+        header: esHeader,
+        data: esHome,
+        aboutMe: esAboutMe,
+        qualifications: esQualifications,
+        projects: esProjects,
+        contact: esContact,
+      },
     },
-  },
-  ns: ["header", "data", "aboutMe", "qualifications", "projects", "contact"],
-  defaultNS: "header",
-});
+    ns: ["header", "home", "aboutMe", "qualifications", "projects", "contact"],
+    defaultNS: "header",
+    detection: {
+      order: [
+        "querystring",
+        "cookie",
+        "localStorage",
+        "navigator",
+        "htmlTag",
+        "path",
+        "subdomain",
+      ],
+      caches: ["localStorage", "cookie"],
+    },
+  });
