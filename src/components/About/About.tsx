@@ -1,14 +1,17 @@
 import "./About.css";
+import { useTranslation } from "react-i18next";
 
 import AboutImg from "../../assets/profile-pic.jpg";
 import CV from "../../assets/Veron-Caceres-CV.pdf";
 import Info from "./Info";
 
 const About = () => {
+  const { t, i18n } = useTranslation("aboutMe");
+
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">Sobre mi</h2>
-      <span className="section__subtitle">Mi camino personal</span>
+      <h2 className="section__title">{t("title")}</h2>
+      <span className="section__subtitle">{t("subtitle")}</span>
 
       <div className="about__container container grid">
         <img src={AboutImg} className="about__img" alt="" />
@@ -17,19 +20,12 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Soy desarrollador web y estudiante de Ingenieria. En mis tiempos
-            libres practico calistenia y tambien me doy lugar para a los
-            videojuegos.
-            <br /> Durante mi carrera profesional y de estudiante una de mis
-            pasiones fue resolver y ayudar al usuario a través de soluciones
-            tecnológicas bien pensadas y funcionales. Creo que la clave está en
-            empatizar con las necesidades del usuario final y transformar esas
-            necesidades en experiencias digitales que realmente marquen la
-            diferencia.
+            {t("description")}
+            <br /> {t("description2")}
           </p>
           <a download="" href={CV} className="button button--flex">
             {" "}
-            Descargar CV{" "}
+            {t("button")}{" "}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"

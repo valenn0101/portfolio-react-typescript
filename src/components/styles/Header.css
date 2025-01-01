@@ -21,6 +21,10 @@
   font-weight: var(--font-medium);
 }
 
+.nav__toggle {
+  background-color: white;
+}
+
 .nav__list {
   display: flex;
   column-gap: 2rem;
@@ -40,6 +44,10 @@
 .nav__close,
 .nav__toggle {
   display: none;
+}
+
+.nav__close {
+  background-color: hsl(0, 0%, 98%);
 }
 
 .scroll-header {
@@ -127,4 +135,22 @@
   .nav__list {
     column-gap: 0;
   }
+}
+
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.language-switcher button {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language-switcher button:hover {
+  background: #f5f5f5;
 }

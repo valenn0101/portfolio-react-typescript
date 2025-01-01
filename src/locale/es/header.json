@@ -1,0 +1,12 @@
+{
+    "welcome": "Bienvenido",
+    "menu": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "skills": "Habilidades",
+        "portfolio": "Portafolio",
+        "contact": "Contacto"
+    },
+    "close_menu": "Cerrar Menú",
+    "toggle_menu": "Abrir Menú"
+}

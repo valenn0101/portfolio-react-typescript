@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
+import '../config/i18next.config';
 
 export default function Home() {
   return (
     <div>
-      <h1>HOME</h1>
-
       <div>
         <Outlet />
       </div>

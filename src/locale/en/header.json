@@ -1,0 +1,12 @@
+{
+    "welcome": "Welcome",
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "close_menu": "Close Menu",
+    "toggle_menu": "Toggle Menu"
+}

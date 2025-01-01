@@ -1,11 +1,14 @@
 // @ts-nocheck
 
 import "./Contact.css";
+import { useTranslation } from "react-i18next";
 
 import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
+
   const form = useRef();
 
   const sendEmail = (e: Event) => {
@@ -22,57 +25,46 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Mis contactos</h2>
-      <span className="section__subtitle">Contáctame</span>
+      <h2 className="section__title">{t("title")}</h2>
+      <span className="section__subtitle">{t("subtitle")}</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Habla conmigo</h3>
+          <h3 className="contact__title">{t("contact_title")}</h3>
 
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Email</h3>
+              <h3 className="contact__card-title">{t("contact_option_1")}</h3>
               <span className="contact__card-data">
-                veroncaceresvalentin@gmail.com
+                {t("contact_option_1_info")}
               </span>
 
               <a
                 href="mailto:veroncaceresvalentin@gmail.com"
                 className="contact__button"
               >
-                Escribeme{" "}
+                {t("contact_option_1_button")}{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
+              <i className="bx bxl-linkedin contact__card-icon"></i>
 
-              <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+549385570077</span>
-
-              <a
-                href="https://api.whatsapp.com/send?phone=543855770077&text=%F0%9F%91%8B%F0%9F%91%8B"
-                className="contact__button"
-              >
-                Escribeme{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
-            </div>
-
-            <div className="contact__card">
-              <i className="bx bxl-twitter contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Twitter</h3>
-              <span className="contact__card-data">@veron_caceres</span>
+              <h3 className="contact__card-title">{t("contact_option_2")}</h3>
+              <span className="contact__card-data">
+                {t("contact_option_2_info")}
+              </span>
 
               <a
-                href="https://twitter.com/messages/compose?recipient_id=1634319163110858752&text=Hello%20Valentin%20%F0%9F%91%8B%F0%9F%91%8B"
+                href="https://www.linkedin.com/in/vcvalentin/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="contact__button"
               >
-                Escribeme{" "}
+                {t("contact_option_2_button")}{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -82,43 +74,43 @@ const Contact = () => {
         <form ref={form} className="contact__form" onSubmit={sendEmail}>
           <div className="contact__form-div">
             <label htmlFor="name" className="contact__form-tag">
-              Nombre
+              {t("form_name_label")}
             </label>
             <input
               type="text"
               name="name"
               className="contact__form-input"
-              placeholder="Tu nombre"
+              placeholder={t("form_name_placeholder")}
             />
           </div>
 
           <div className="contact__form-div">
             <label htmlFor="email" className="contact__form-tag">
-              Email
+              {t("form_email_label")}
             </label>
             <input
               type="email"
               name="email"
               className="contact__form-input"
-              placeholder="Tu correo"
+              placeholder={t("form_email_placeholder")}
             />
           </div>
 
           <div className="contact__form-div contact__form-area">
             <label htmlFor="message" className="contact__form-tag">
-              Proyecto
+              {t("form_project_label")}
             </label>
             <textarea
               name="project"
               cols="30"
               rows="10"
               className="contact__form-input"
-              placeholder="Tu proyecto"
+              placeholder={t("form_project_placeholder")}
             ></textarea>
           </div>
 
           <button className="button button--flex">
-            Enviar un mensaje
+            {t("form_button")}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -138,10 +130,6 @@ const Contact = () => {
             </svg>
           </button>
         </form>
-
-        <div className="contact__content">
-          <h3 className="contact__title">Cuentame tu propuesta</h3>
-        </div>
       </div>
     </section>
   );
